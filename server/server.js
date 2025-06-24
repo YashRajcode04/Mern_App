@@ -10,7 +10,10 @@ const port = 8080;
 /** Middleware */
 app.use(express.json());
 app.use(cors({
-  origin: "http://localhost:3000",   // your React frontend
+  origin: [
+    "http://localhost:3000",
+    "https://mern-dfm3qkaav-yashs-projects-4513980c.vercel.app"
+  ],
   credentials: true
 }));
 
